@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Student Dashboard</title>
+    <title>Trainer Dashboard </title>
 
     <!-- Bootstrap -->
     <link href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -20,14 +20,6 @@
 
     <!-- Custom styling plus plugins -->
     <link href="/css/custom.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=N8Gix1b0800IGGn1I06EDJCcy7xyNlevvbc3ygJe2BQiVWkqlWi6KT3zpXEbVEfmjDgruuZYjU717R50qOOkgESN8YOHqiSihHCnPnEQxVvyPS_eFUGrsOx3O8Pmiq-ElhAxJH_1pStZLkEZk64n9BNMliNOqvuIw2fGWmsr0n-iUBfW1RcgrjQkBrQDWwCeSS7o-4q--eLDLO_151aUniF3TaCoVIZIutpowzlNfBCCpm1FcCsRhq_Pg5Fh9xq8ySIb_Gcn5Z_-G5dwN__4UUJIiAqailBk08soL_FjTYc-yw1FjZvYPOuZ-Bd9aMpMnPGN5HRURNRoWoe6Us3gZ5xpzTSKJT48pFLa99jVQ730OF8x8wylOdTxpWqJL65yDP2JIfIopDqL8LeCufQPeQrm3LASmnG3mN943BXCcBTU5YQNSZvIwesu1e-3qyBjAbogZsXPjb2Upz9xFgyjKxzafe4TuxItLZx1p0ZZz2Wjidkt5bERPur5eu2fdAS1K22RqcFw2fsazcmxZrfCEuMQyTNtA05QfWPT-fjBSQ6HqzWlV4JkxcoFoBENxGzSr61YR45dEW5_66qf-dZx9MXOT1sKoHGMLmiCAZDCsrRwaL2O8c-g4dbSP3GtWc-iK1jFQ-5CX_UBc-xC_0wHS5e6fTEpvEbkR96MyNGBJKn3jszYH6KMRkasNX_nYRvwYxnYcPKK9d5ld8W91-m0MvbFu26epnB8-Q03F2gqrdhI_1EzPJcO4FwrcSyR7gKpBkUZ6HgikQeeNw8U5vAGNyHWx2wrpPtgZipVG4Xgy60wVm_6S908LI2BxA6IS2KE955yaGmBUK3LH8ZbwtikNytMpNryhCFzgp9vIzEDuJ-AdcAMh4PWHXU7gsQXaNvpeJN_rcYugfVw1xkq_W6gS6IsjhVsJOMgZg7QRmihb2LVcS4apxxlBDpYEgloD_INdyFUp1d7uDH6OKszXRe8bW3RdcD76ULyqOP9YBZ13D29S7js458WtjOcYl8LchmmHuYHJ3hlY_3ZtiLke3jDgP0-yVDj_SeiMCFVjVbJWUMD2KEYwrmut4bewKHR1x6Fi-9bad70gBUIC8fpDDNDm8lSYGwW5kU1taWCYfaafPEaZNdrR4n9jn71wOxIofNhDi-Iiv7KoY9MXhc562i7Nr-DEqECSbRFvUPRRLxinuJwb7a8L9Y8VkfaBPK7XVCWY0kfchnSFpheKwwK5M_30A" nonce="ad443d6db33878923c495c387b6901e5" charset="UTF-8"></script>
-
-    <!-- Progress bar component -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body class="nav-md">
@@ -36,7 +28,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Southern Learners</span></a>
+                    <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Sourthen learnears!</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -47,8 +39,8 @@
                         <img src="/images/img.jpg" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
-                        <span>Welcome</span>
-                        <h2>(student name here)</h2>
+                        <span>Welcome,</span>
+                        <h2>Trainer</h2>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
@@ -58,16 +50,14 @@
                 <!-- sidebar menu -->
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
-                        <h3>Quick Access</h3>
+                        <h3>General</h3>
                         <ul class="nav side-menu">
 
-                            <li><a href="#"><i class="fa fa-user"></i>My Trainer</a></li>
-                            <li><a href="#"><i class="fa fa-car"></i>My Trial</a></li> <!-- vehicle details, location map-->
-                            <li><a href="#"><i class="fa fa-edit"></i>Quiz</a></li>
-                            <li><a href="#"><i class="fa fa-star-half-o"></i>Rate my Trainer</a></li>
-                            <li><a href="#"><i class="fa fa-bar-chart-o"></i>My Progress</a></li>
-                            <!--attendance and calendar will be shown on dashboard-->
-
+                            <li><a href="student/crud"><i class="fa fa-users"></i>My Students</a></li>
+                            <li><a href="student/crud"><i class="fa fa-clone"></i>My Vehicles</a></li>
+                            <li><a href="calendar.html"><i class="fa fa-edit"></i>Lessions</a></li>
+                            <li><a href="student/crud"><i class="fa fa-bar-chart-o"></i>Rating</a></li>
+                            <li><a href="teacherform.html"><i class="fa fa-desktop"></i>Reviews</a></li>
 
                         </ul>
                     </div>
@@ -87,11 +77,11 @@
                     <ul class=" navbar-right">
                         <li class="nav-item dropdown open" style="padding-left: 15px;">
                             <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                <img src="/images/img.jpg" alt="">(student name here)
+                                <img src="/images/img.jpg" alt="">Trainer
                             </a>
                             <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item"  href="javascript:;">My Profile</a>
-                                <a class="dropdown-item"  href="#"><i class="fa fa-sign-out pull-right"></i>Log Out</a>
+                                <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                                <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                             </div>
                         </li>
                     </ul>
@@ -101,29 +91,76 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main">
-
-            <h1>Dashboard</h1>
-            <style>
-                img {
-                    max-width: 100%;
-                }
-            </style>
-
-            <img src="/images/slide-7.jpg" alt="" width=1350; height=550;>
-
-        </div>
-
         <div class="container">
-            <h2>My Attendance</h2>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                    <span class="sr-only"> (days) </span>
+
+            <h2>Product Details</h2>
+            <div>
+
+            <form class="form-horizontal" th:object="${productForm}" th:action="@{/product}" method="post">
+
+                <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger">
+                    <p th:text="${#fields.hasErrors}">Error Message</p>
                 </div>
-            </div>
+
+                <input type="hidden" th:field="*{id}"/>
+
+                <div class="form-group" th:class="${#fields.hasErrors('name')} ? 'form-group has-error' : 'form-group'">
+                    <label class="col-sm-2 control-label">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" th:field="*{name}" th:errorclass="has-error"  placeholder="Enter Name"/>
+
+                        <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('name')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="form-group" th:class="${#fields.hasErrors('competence')} ? 'form-group has-error' : 'form-group'">
+                    <label class="col-sm-2 control-label">Competence:</label>
+                    <div class="col-sm-10">
+                        <input type="text" min="0" max="5000" step="0.01" class="form-control" th:field="*{competence}" th:errorclass="has-error"  placeholder="Enter Competence"/>
+
+                        <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('competence')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="form-group" th:class="${#fields.hasErrors('attendence')} ? 'form-group has-error' : 'form-group'">
+                    <label class="col-sm-2 control-label">Attendence:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" th:field="*{attendence}" th:errorclass="has-error"  placeholder="Enter Attendence"/>
+
+                        <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('attendence')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="form-group" th:class="${#fields.hasErrors('comment')} ? 'form-group has-error' : 'form-group'">
+                    <label class="col-sm-2 control-label">Comment:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="3" th:field="*{comment}" th:errorclass="has-error"  placeholder="Add a Comment"/>
+
+                        <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('comment')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+
         </div>
-
-
 
         <!-- /page content -->
 
@@ -135,7 +172,7 @@
                     <!-- Footer Location -->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">No. 22, Upper Dickson Rd,
+                        <p class="lead mb-0">22,Upper dickson road,
                             <br>Galle, Sri Lanka.</p>
                     </div>
 
@@ -190,15 +227,3 @@
 
 </body>
 </html>
-
-<!--<!DOCTYPE html>
-<html  xmlns:th="http://www.thymeleaf.org">
-<head th:insert="fragments.html :: headerfiles">
-    <meta charset="UTF-8">
-    <title>student</title>
-</head>
-<header th:insert="fragments.html::nav"></header>
-<body>
-    <h1>student</h1>
-</body>
-</html> -->
